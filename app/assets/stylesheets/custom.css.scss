@@ -1,1 +1,17 @@
 @import 'bootstrap/dist/css/bootstrap';
+
+.form_main .form-group {
+  display: inline-block;
+}
+.form_main .form-group input {
+  border: 3px solid black;
+  min-width: 180px;
+}
+.form_main .submit_btn input {
+  background: #000;
+  color: #fff;
+}
+.w_55 {
+  width: 55%;
+  margin: 50px auto 0;
+}

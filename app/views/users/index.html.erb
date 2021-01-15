@@ -1,0 +1,25 @@
+<div class="form_main d-flex justify-content-center mt-5">
+  <%= render 'shared/form' %>
+</div>
+<div class="w_55 d-flex justify-content-center flex-column mx_90px">
+  <%= render 'shared/message' %>
+  <h2 class="">valid email</h2>
+  <table>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>url</th>
+      <th>email</th>
+    </tr>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.first_name %> </td>
+        <td><%= user.last_name %></td>
+        <td><%= user.url %></td>
+        <td><%= user.email %></td>
+      </tr>
+    <% end %>
+
+  </table>
+</div>
+
